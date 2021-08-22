@@ -13,8 +13,8 @@ class UserProfile(models.Model):
     address = models.CharField(verbose_name="Indirizzo", max_length=100, null= True, blank= True)
     town = models.CharField(verbose_name='Città/Paese',max_length=100, null=True,blank=True)
     county = models.CharField(verbose_name="Provincia", max_length=100,null=True,blank=True)
-    post_cpde = models.CharField(verbose_name="CAP", max_length=100,null=True,blank=True)
-    country = models.CharField(verbose_name="Stato",max_length=100, null=True, blank=True)
+    post_code = models.CharField(verbose_name="CAP", max_length=8,null=True,blank=True)
+    country = models.CharField(verbose_name="Stato",max_length=40, null=True, blank=True)
     longitude = models.CharField(verbose_name="Longitudine",max_length=50, null=True,blank=True)
     latitude = models.CharField(verbose_name="Latitudine", max_length=50, null=True, blank=True)
 
